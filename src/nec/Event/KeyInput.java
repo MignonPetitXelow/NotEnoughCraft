@@ -4,10 +4,12 @@ import com.github.kwhat.jnativehook.GlobalScreen;
 import com.github.kwhat.jnativehook.NativeHookException;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyListener;
+import src.nec.Interface.SearchBarItems;
 import src.nec.Interface.Test;
 
 public class KeyInput implements NativeKeyListener {
     public void nativeKeyPressed(NativeKeyEvent e) {
+
     }
 
     public void nativeKeyReleased(NativeKeyEvent e) {
@@ -20,7 +22,7 @@ public class KeyInput implements NativeKeyListener {
                 return;
             }
         }
-        if(NativeKeyEvent.getKeyText(e.getKeyCode()).equals("F12"))
+        else if(NativeKeyEvent.getKeyText(e.getKeyCode()).equals("F12"))
         {
             if(!OpenNec.GuiOpen)
             {
@@ -34,11 +36,12 @@ public class KeyInput implements NativeKeyListener {
                 Test.frame.setVisible(false);
                 return;
             }
+        } else {
+            if (Test.frame != null)
+                SearchBarItems.newReasearch(Test.searchBar.getText());
         }
     }
 
-    public void nativeKeyTyped(NativeKeyEvent e) {
-    }
 
 
 

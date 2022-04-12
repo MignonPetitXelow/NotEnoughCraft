@@ -23,6 +23,7 @@ public class Test implements Runnable
 
         System.out.println("Gui is running");
 
+        frame.setType(Window.Type.UTILITY);
         frame.setSize((int) (screenSize.width/2.7), screenSize.height);
         frame.setPreferredSize(new Dimension((int) (screenSize.width/2.7), screenSize.height));
 
@@ -34,6 +35,8 @@ public class Test implements Runnable
         searchBar(frame);
 
         frame.setAlwaysOnTop(true);
+        frame.requestFocus();
+
 
         frame.pack();
 
@@ -57,7 +60,6 @@ public class Test implements Runnable
         searchBar.setForeground(Color.WHITE);
         searchBar.setAlignmentY(JTextField.CENTER);
         searchBar.setBackground(new Color(25, 25, 25, 140));
-
         searchBarPanel.add(searchBar);
         frame.add(searchBarPanel);
     }

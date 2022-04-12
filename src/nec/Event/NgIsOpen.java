@@ -50,7 +50,6 @@ public class NgIsOpen
                     }
 
                     isOpen = procs.stream().filter(row -> row.indexOf(findProcess) > -1).count() > 0;
-                    System.out.println("NgIsOpen: "+isOpen);
 
 
                 }
