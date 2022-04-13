@@ -1,15 +1,16 @@
-package fr.vx.notenoughcraft.nationglory;
+package src.fr.vx.notenoughcraft.nationglory;
 
-import fr.vx.notenoughcraft.Main;
+
+import src.fr.vx.notenoughcraft.Item.Items;
+import src.fr.vx.notenoughcraft.Item.item;
+import src.fr.vx.notenoughcraft.Main;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicButtonUI;
 import javax.swing.plaf.metal.MetalButtonUI;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,17 +24,17 @@ public class GalacticrafItem extends JButton implements MouseListener {
     private Image image;
     private JLabel label;
 
-    public GalacticrafItem(String path, String name, Box box) {
+    public GalacticrafItem(item item, Box box) {
 
-        this.name = name;
+        this.name = item.getName();
 
         try {
 
-            this.url = new URL(path);
+            this.url = new URL(item.getTextureUrl());
             this.image = ImageIO.read(this.url).getScaledInstance(80, 80, Image.SCALE_AREA_AVERAGING);
             this.label = new JLabel(new ImageIcon(this.image));
             this.label.setLayout(new FlowLayout());
-            this.label.setBounds(15 - 20 ,this.getHeight()/2 - 20, 80, 80);
+            this.label.setBounds(15 - 20 ,this.getHeight()/2 - 10, 80, 80);
             this.label.setLocation(0,0);
             this.label.setText(this.name);
             this.label.setForeground(Color.white);
@@ -98,28 +99,7 @@ public class GalacticrafItem extends JButton implements MouseListener {
 
     public static void register(Box box) {
 
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
+        items.add(new GalacticrafItem(Items.iron_ingot, box));
 
         box.add(Box.createHorizontalStrut(15));
 

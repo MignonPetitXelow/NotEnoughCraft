@@ -1,19 +1,19 @@
-package fr.vx.notenoughcraft;
+package src.fr.vx.notenoughcraft;
 
-import fr.vx.notenoughcraft.nationglory.GalacticrafItem;
+import src.fr.vx.notenoughcraft.Item.Items;
+import src.fr.vx.notenoughcraft.nationglory.GalacticrafItem;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class Main {
 
     public static JFrame frame;
 
     public static void main(String[] args) throws IOException, FontFormatException {
+        Items.register();
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
