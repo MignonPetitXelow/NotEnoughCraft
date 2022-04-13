@@ -61,6 +61,7 @@ public class GalacticrafItem extends JButton implements MouseListener {
 
 
         }});
+        //Weird thing with linux
 
     }
 
@@ -98,27 +99,6 @@ public class GalacticrafItem extends JButton implements MouseListener {
 
     public static void register(Box box) {
 
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
-        items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
         items.add(new GalacticrafItem("https://wiki.micdoodle8.com/images/7/78/Copper_Ore.png", "Copper Ore", box));
 
         box.add(Box.createHorizontalStrut(15));
