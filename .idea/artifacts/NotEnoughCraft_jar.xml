@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NotEnoughCraft:jar">
+    <output-path>$PROJECT_DIR$/../..</output-path>
+    <root id="archive" name="NotEnoughCraft-unsafe.jar">
+      <element id="module-output" name="NotEnoughCraft-unsafe" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../../Program Files/Java/jdk1.8.0_291/lib/tools.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/ow2/asm/asm-all/5.2/asm-all-5.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
